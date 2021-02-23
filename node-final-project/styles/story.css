@@ -1,0 +1,45 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+.headline {
+  font-size: 38px;
+  text-align: center;
+  padding: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.headline p {
+  text-shadow: 1px 1px 3px black;
+}
+
+.animated-logo {
+  padding: 20px;
+}
+
+.about-story {
+  font-size: 18px;
+  padding: 30px;
+  border-bottom: 2px solid black;
+}
+
+.contributors {
+  padding: 20px;
+  background-color: #999;
+}
+
+.contributors .thanks {
+  font-size: 28px;
+}
+
+.contributor p {
+  padding: 10px 0;
+  font-size: 22px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
