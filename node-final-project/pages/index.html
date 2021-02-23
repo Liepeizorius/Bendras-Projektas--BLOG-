@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome linkas -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrapo linkas -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,9 +25,50 @@
     <title>Explore</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <!-- Navigation bar -->
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1"
+            ><a href="../pages/index.html">Medium</a></span
+          >
+          <div class="nav-items">
+            <ul>
+              <li><a href="../pages/story.html">Our Story</a></li>
+              <li><a href="../pages/membership.html">Membership</a></li>
+              <li><a href="../pages/write.html">Write</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+            <button type="button" class="btn btn-dark" id="navbar-btn">Get Started</button>             
+          </div>
+        </div>
+        
+      </nav>
+    </header>
     ‍
-    <main>labas labas labas</main>
+    <main>
+      <!-- Intro text -->
+      <section class="intro"> 
+      <h1>Explore new perspectives</h1>
+      <p>
+        Read and share ideas from independent voices, world-class publications,
+        and experts from around the globe. Everyone's welcome.
+        <a href="../pages/story.html">Learn more</a>
+        <div><button type="button" class="btn btn-primary">Primary</button></div>
+      </section>
+      <!-- User article headlines -->
+      <section class="article-headlines">
+        <div class="user">
+          <p id="article-number"></p>
+          <img src="" alt="" id="user-avatar">
+          <h4 id="user-name"></h4>
+          <h2 id="user-article-headline"></h2>
+        </div>
+        
+
+      </section>
+      </p>
+    </main>
     <footer></footer>
   </body>
 </html>

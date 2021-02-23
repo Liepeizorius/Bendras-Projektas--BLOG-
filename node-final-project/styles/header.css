@@ -1,0 +1,37 @@
+/* Mobile first */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+header,
+main {
+  padding: 10px;
+  background-color: rgb(128, 236, 128);
+}
+
+.nav-items ul {
+  display: none;
+  list-style: none;
+  text-decoration: none;
+}
+#navbar-btn {
+  display: block;
+}
+.nav-items ul li {
+  margin: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .nav-items ul {
+    display: flex;
+  }
+  .navbar {
+    display: flex;
+  }
+}
+/* Desktop */
