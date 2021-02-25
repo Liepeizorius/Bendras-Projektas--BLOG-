@@ -10,7 +10,7 @@
 /* MOBILE FIRST */
 .headline {
   font-family: Lobster;
-  font-size: 38px;
+  font-size: 50px;
   text-align: center;
   padding: 40px;
   border-top: 2px solid black;
@@ -77,12 +77,17 @@
 }
 
 .recommendations h4 {
+  font-size: 30px;
   font-family: Lobster;
   padding: 20px;
 }
 
 .carousel-item {
   padding: 20px;
+}
+
+.carousel-item p {
+  font-size: 20px;
 }
 
 /* WRITE CTA */
@@ -94,13 +99,19 @@
 }
 
 .cta h5 {
+  font-size: 30px;
   font-family: Lobster;
   padding: 20px;
 }
 
 .cta p {
+  font-size: 20px;
   font-family: Roboto;
   padding: 20px;
+}
+
+.cta .button a {
+  font-size: 24px;
 }
 
 .button {
@@ -114,16 +125,28 @@
   border-bottom: 2px solid black;
 }
 .membership-cta h5 {
+  font-size: 30px;
   font-family: Lobster;
   padding: 20px;
 }
 .membership-cta p {
+  font-size: 24px;
   font-family: Roboto;
   padding: 20px;
 }
 
+.membership-cta .button {
+  margin-bottom: 20px;
+}
+.membership-cta .button a {
+  font-size: 24px;
+}
+
 /* TABLET */
 @media screen and (min-width: 650px) {
+  .headline {
+    font-size: 60px;
+  }
   .headline .animated-logo {
     display: none;
   }
@@ -149,6 +172,9 @@
   .tablet-logo h2 {
     font-size: 36px;
   }
+  .thanks p {
+    font-size: 38px;
+  }
   .contributor-container {
     display: flex;
     flex-wrap: wrap;
@@ -157,9 +183,28 @@
     width: 50%;
     padding: 5px;
   }
+  .contributor p {
+    text-align: center;
+    font-size: 28px;
+  }
   .contributor-container :nth-child(9) {
     text-align: center;
     width: 100%;
+  }
+  .carousel-item p {
+    font-size: 28px;
+  }
+  .cta h5 {
+    font-size: 42px;
+  }
+  .cta p {
+    font-size: 24px;
+  }
+  .membership-cta h5 {
+    font-size: 42px;
+  }
+  .membership-cta p {
+    font-size: 24px;
   }
 }
 
@@ -177,6 +222,12 @@
   .contributor {
     width: 33%;
     padding: 5px;
+  }
+  .thanks p {
+    font-size: 42px;
+  }
+  .contributor p {
+    font-size: 28px;
   }
   .contributor-container :nth-child(9) {
     text-align: left;
@@ -206,7 +257,12 @@
     padding: 40px;
     width: fit-content;
   }
-
+  .separate h4 {
+    font-size: 70px;
+  }
+  .carousel-item p {
+    font-size: 40px;
+  }
   .cta {
     display: flex;
     flex-direction: column;
@@ -224,5 +280,24 @@
   }
   .cta button {
     width: 50%;
+  }
+
+  .membership-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .membership-cta h5 {
+    font-size: 80px;
+    text-align: center;
+  }
+  .membership-cta p {
+    width: 30%;
+    font-size: 24px;
+    text-align: center;
+  }
+  .membership-cta .button a {
+    font-size: 24px;
   }
 }
