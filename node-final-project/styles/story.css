@@ -48,6 +48,10 @@
   border-bottom: 2px solid black;
 }
 
+.contributor {
+  width: 100%;
+}
+
 .contributors .thanks {
   font-size: 28px;
 }
@@ -66,6 +70,10 @@
   border-bottom: 2px solid white;
   background-color: #3a0ca3;
   color: #fff;
+}
+
+.separate {
+  display: none;
 }
 
 .recommendations h4 {
@@ -140,5 +148,81 @@
   }
   .tablet-logo h2 {
     font-size: 36px;
+  }
+  .contributor-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contributor {
+    width: 50%;
+    padding: 5px;
+  }
+  .contributor-container :nth-child(9) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+  .headline {
+    font-size: 100px;
+  }
+  .tablet-logo {
+    transform: rotate(0deg);
+    margin-left: 80px;
+    text-align: center;
+    font-family: Lobster;
+  }
+  .contributor {
+    width: 33%;
+    padding: 5px;
+  }
+  .contributor-container :nth-child(9) {
+    text-align: left;
+    width: 33%;
+    padding: 5px;
+  }
+  .recommendations h4 {
+    display: none;
+  }
+  .combined {
+    display: flex;
+  }
+  .recommendations {
+    background-color: black;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .separate {
+    font-family: Lobster;
+    background-color: black;
+    color: #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: block;
+    padding: 40px;
+    width: fit-content;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta h5 {
+    font-size: 80px;
+    text-align: center;
+  }
+  .cta p {
+    width: 30%;
+    font-size: 24px;
+    text-align: center;
+  }
+  .cta button {
+    width: 50%;
   }
 }
