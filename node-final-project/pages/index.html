@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome linkas -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrapo linkas -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,12 +22,211 @@
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <script src="index.js" defer></script>
-    <title>Explore</title>
+    <title>The Infinite World of Node-JS</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <!-- Navigation bar -->
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">
+            <a href="../pages/index.html">Medium</a>
+          </span>
+          <div class="nav-items">
+            <ul>
+              <li><a href="../pages/story.html">Our Story</a></li>
+              <li><a href="../pages/membership.html">Membership</a></li>
+              <li><a href="../pages/write.html">Write</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+            <button type="button" class="btn sign-in btn-dark" id="navbar-btn">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
     ‍
-    <main>labas labas</main>
+    <main>
+      <!-- Intro text  -- First Section-->
+      <section class="intro">
+        <h1>Explore new perspectives</h1>
+        <p>
+          Read and share ideas from independent voices, world-class
+          publications, and experts from around the globe. Everyone's welcome.
+          <a href="../pages/story.html">Learn more</a>
+        </p>
+
+        <div>
+          <button type="button" class="btn sign-in btn-primary">
+            Get Started
+          </button>
+        </div>
+      </section>
+
+      <div class="trending">
+        <p><i class="fas fa-chart-line"></i> TRENDING ON MEDIUM</p>
+      </div>
+
+      <!-- User article headlines -- Second Section -->
+      <!-- User One entry -->
+      <section class="article-headlines">
+        <div class="user user1">
+          <p class="article-number">01</p>
+          <div>
+            <img src="" alt="" id="user-avatar1" />
+            <h4 class="username"></h4>
+            <h2 class="user-article-headline"></h2>
+          </div>
+        </div>
+        <!-- User Two entry -->
+        <div class="user user2">
+          <p class="article-number">02</p>
+          <div>
+            <img src="" alt="" id="user-avatar2" />
+            <h4 class="username"></h4>
+            <h2 class="user-article-headline"></h2>
+          </div>
+        </div>
+        <!-- User Three Entry -->
+        <div class="user user3">
+          <p class="article-number">03</p>
+          <div>
+            <img src="" alt="" id="user-avatar3" />
+            <h4 class="username"></h4>
+            <h2 class="user-article-headline"></h2>
+          </div>
+        </div>
+        <!-- User Four Entry -->
+        <div class="user user4">
+          <p class="article-number">04</p>
+          <img src="" alt="" id="user-avatar4" />
+          <div>
+            <h4 class="username"></h4>
+            <h2 class="user-article-headline"></h2>
+          </div>
+        </div>
+      </section>
+      <!--  Articles and Topics -- Third Section -->
+      <section class="articles-topics">
+        <section class="bookmark-articles">
+          <div class="entry first-entry">
+            <div class="article-info">
+              <h4 class="username">
+                Lorem ipsum in<span class="topic-title"></span>
+              </h4>
+              <h2 class="user-article-headline"></h2>
+            </div>
+            <div class="article-image">
+              <i class="far fa-bookmark"></i>
+              <img src="../images/kid-window.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div class="entry second-entry">
+            <div class="article-info">
+              <h4 class="username">
+                Lorem ipsum in<span class="topic-title"></span>
+              </h4>
+              <h2 class="user-article-headline"></h2>
+            </div>
+            <div class="article-image">
+              <i class="far fa-bookmark"></i>
+              <img src="../images/man-sea.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="entry third-entry">
+            <div class="article-info">
+              <h4 class="username">
+                Lorem ipsum in<span class="topic-title"></span>
+              </h4>
+              <h2 class="user-article-headline"></h2>
+            </div>
+            <div class="article-image">
+              <i class="far fa-bookmark"></i>
+              <img src="../images/navy.png" alt="" />
+            </div>
+          </div>
+
+          <div class="entry third-entry">
+            <div class="article-info">
+              <h4 class="username">
+                Lorem ipsum in<span class="topic-title"></span>
+              </h4>
+              <h2 class="user-article-headline"></h2>
+            </div>
+            <div class="article-image">
+              <i class="far fa-bookmark"></i>
+              <img src="../images/camomile.jpeg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="discover">
+          <h5>DISCOVER MORE OF WHAT MATTERS TO YOU</h5>
+          <div class="topic-examples">
+            <button type="button" class="btn sign-in btn-light">Self</button>
+            <button type="button" class="btn sign-in btn-light">
+              Relationships
+            </button>
+            <button type="button" class="btn sign-in btn-light">
+              Data Science
+            </button>
+            <button type="button" class="btn sign-in btn-light">
+              Programming
+            </button>
+            <button type="button" class="btn sign-in btn-light">
+              Productivity
+            </button>
+            <button type="button" class="btn sign-in btn-light">
+              Javascript
+            </button>
+            <button type="button" class="btn sign-in btn-light">
+              Machine learning
+            </button>
+            <button type="button" class="btn sign-in btn-light">
+              Politics
+            </button>
+            <button type="button" class="btn sign-in btn-light">Health</button>
+            <a href="">See all Topics</a>
+          </div>
+        </section>
+      </section>
+      <!-- Sign-In form -->
+      <section class="signin-options">
+        <h6>Join Medium.</h6>
+        <div class="external-signin-tags">
+          <div>
+            <a
+              class="external-signin"
+              href="//medium.com/m/connect/google?state=google-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dregister--------------------------lo_home_nav-----------%7Cregister&amp;source=register--------------------------lo_home_nav-----------"
+            >
+              <i class="fab fa-google"></i>
+              Sign Up with Google</a
+            >
+          </div>
+          <div>
+            <a
+              href="//medium.com/m/connect/facebook?state=facebook-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dregister--------------------------lo_home_nav-----------%7Cregister&amp;source=register--------------------------lo_home_nav-----------"
+              class="external-signin"
+              ><i class="fab fa-facebook-f"></i> Sign up with Facebook</a
+            >
+          </div>
+          <div>
+            <a href="" class="external-signin"
+              ><i class="far fa-envelope"></i> Sign up with email</a
+            >
+          </div>
+          <div class="signin-info">
+            <p>Already have an account?<a href="">Sign In</a></p>
+            <p>
+              Click "Sign Up" to agree to<a href="">Terms of Service</a>and
+              acknowledge that the <a href="">Privacy policy</a> applies to you.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
