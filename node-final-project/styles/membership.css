@@ -64,7 +64,7 @@ h2 {
 }
 .access img,
 .support img {
-  max-width: 100%;
+  width: 100%;
   padding: 0 20px;
   margin: 20px;
 }
@@ -78,6 +78,12 @@ h2 {
   font-weight: 600;
   text-align: center;
 }
+.new-directions h1,
+.big-headline h1 {
+  font-size: 60px;
+  margin-bottom: 40 px 0;
+  font-family: var(--headline-font);
+}
 
 .why-member img {
   width: 40%;
@@ -85,9 +91,10 @@ h2 {
 }
 .why-member p {
   width: 80%;
-  margin: 10px;
+  margin: 10px 40px;
   font-family: var(--text-font);
   font-size: 25px;
+  text-align: right;
 }
 .new-directions {
   background-color: #4cc9f0;
@@ -112,10 +119,34 @@ h2 {
     margin: 10px 0 0 40px;
   }
   .new-directions h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
   .new-directions {
     background-color: #4cc9f0;
     height: 55vh;
+  }
+}
+
+/* Tablet  */
+@media screen and (min-width: 768px) {
+  .why-member img {
+    width: 80%;
+  }
+  .why-member p {
+    width: 60%;
+    margin: 0 0 0 180px;
+    text-align: right;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .access img,
+  .support img {
+    width: 100%;
+  }
+  .why-member p {
+    width: 50%;
+    margin: 0 0 0 510px;
+    text-align: right;
   }
 }

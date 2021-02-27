@@ -25,12 +25,17 @@ p {
 }
 .intro h1 {
   text-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 10px black;
+  font-family: var(--headline-font);
+  font-size: 40px;
 }
 .intro a {
   color: var(--primary-white-color);
 }
 .btn-primary {
   margin: 15px;
+}
+.intro button {
+  font-size: 600;
 }
 .fa-chart-line {
   font-size: 20px;
@@ -94,6 +99,11 @@ h5 {
 .external-signin-tags a {
   padding: 5px;
 }
+.external-signin-tags p {
+  text-align: justify;
+  width: 100%;
+  margin: auto;
+}
 h6 {
   font-weight: 600;
   font-size: 30px;
@@ -107,6 +117,10 @@ h6 {
   margin: 20px;
   text-align: center;
   justify-content: center;
+}
+.close-sign p {
+  color: black;
+  width: 50px;
 }
 
 /* Tablet */
@@ -142,5 +156,11 @@ h6 {
 @media screen and (min-width: 1200px) {
   .user {
     width: 33.33%;
+  }
+  .intro h1 {
+    font-size: 60px;
+  }
+  .intro p {
+    font-size: 24px;
   }
 }
