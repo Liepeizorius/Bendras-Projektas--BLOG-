@@ -64,7 +64,7 @@ h2 {
 }
 .access img,
 .support img {
-  width: 100%;
+  width: 80%;
   padding: 0 20px;
   margin: 20px;
 }
@@ -106,6 +106,7 @@ h2 {
   color: var(--primary-white-color);
   font-family: "Lobster";
   font-size: 35px;
+  margin-bottom: 30px;
 }
 
 /* Tablet */
