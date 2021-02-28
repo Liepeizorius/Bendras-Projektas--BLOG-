@@ -6,6 +6,7 @@ const closeBtn = document.querySelector(".closebtn");
 async function openSignIn() {
   document.getElementById("mySignIn").style.height = "100%";
   document.getElementById("mySignIn").style.width = "50%";
+  document.getElementById("mySignIn").style.margin = "auto";
   document.getElementById("mySignIn").style.justifyContent = "center";
 }
 async function closeSignIn() {

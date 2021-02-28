@@ -18,9 +18,9 @@
 }
 /* Header and navbar */
 header {
-  position: sticky;
-  max-width: 100vw;
+  max-width: 100%;
   font-family: var(--headline-font);
+  background-color: white;
 }
 
 .container-fluid span a {

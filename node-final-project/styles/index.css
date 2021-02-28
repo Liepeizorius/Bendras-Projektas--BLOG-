@@ -11,6 +11,9 @@
   background-color: var(--primary-white-color);
   border: 1px solid black;
   color: black;
+  margin: 15px;
+  font-weight: 500;
+  font-family: var(--headline-font);
 }
 
 .intro {
@@ -35,9 +38,7 @@ p {
 .intro a {
   color: var(--primary-white-color);
 }
-.btn-primary {
-  margin: 15px;
-}
+
 .intro button {
   font-size: 600;
 }
