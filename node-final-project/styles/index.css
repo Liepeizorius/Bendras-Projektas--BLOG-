@@ -148,7 +148,47 @@ h6 {
 .fa-facebook-f {
   color: rgb(63, 63, 156);
 }
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(252, 252, 252);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
+.overlay a:hover,
+.overlay a:focus {
+  color: #070606;
+  font-weight: 600;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay a {
+  font-size: 20px;
+}
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
   .intro {
