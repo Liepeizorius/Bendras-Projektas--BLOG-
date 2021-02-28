@@ -190,6 +190,48 @@ h6 {
   top: 15px;
   right: 35px;
 }
+/* Internal sign-in form */
+.overlay2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(252, 252, 252);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay2 a:hover,
+.overlay a:focus {
+  color: #070606;
+  font-weight: 600;
+}
+
+.overlay2 .closebtn2 {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay2 a {
+  font-size: 20px;
+}
+.overlay2 .closebtn2 {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
   .intro {
