@@ -1,0 +1,154 @@
+@import "../styles/header.css";
+@import "../styles/index.css";
+/* Mobile first */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 100%;
+  margin: auto;
+  padding: 5px;
+}
+.big-headline,
+.options {
+  background-color: #4361ee;
+  height: 100%;
+  text-align: center;
+}
+.access {
+  border-right: 1px solid var(--primary-white-color);
+}
+.big-headline {
+  border-bottom: 1px solid var(--primary-white-color);
+}
+main p {
+  text-align: center;
+  padding: 10px 0;
+  font-family: var(--text-font);
+}
+*/ h1 {
+  font-family: var(--headline-font);
+  font-size: 35px;
+  padding: var(--text-padding);
+  color: var(--primary-white-color);
+}
+
+header a {
+  color: var(--primary-dark-color);
+}
+.btn-primary {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  background-color: var(--primary-white-color);
+  color: rgb(24, 24, 134);
+  font-weight: 600;
+  font-size: 18px;
+}
+.btn-primary:hover {
+  background-color: #4cc9f0;
+}
+h2 {
+  margin: 20px 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--primary-white-color);
+}
+
+.options {
+  display: flex;
+}
+.access,
+.support {
+  margin: 0 10px;
+}
+.access img,
+.support img {
+  width: 80%;
+  padding: 0 20px;
+  margin: 20px;
+}
+.access p,
+.support p {
+  color: var(--primary-white-color);
+  font-weight: 600;
+}
+.why-member h2 {
+  color: var(--primary-dark-color);
+  font-weight: 600;
+  text-align: center;
+}
+.new-directions h1,
+.big-headline h1 {
+  font-size: 60px;
+  margin-bottom: 40 px 0;
+  font-family: var(--headline-font);
+}
+
+.why-member img {
+  width: 40%;
+  justify-content: center;
+}
+.why-member p {
+  width: 80%;
+  margin: 10px 40px;
+  font-family: var(--text-font);
+  font-size: 25px;
+  text-align: right;
+}
+.new-directions {
+  background-color: #4cc9f0;
+  height: 35vh;
+  text-align: center;
+}
+
+.new-directions h1 {
+  color: var(--primary-white-color);
+  font-family: "Lobster";
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .feedback {
+    display: flex;
+  }
+  .why-member img,
+  .why-member p {
+    width: 50%;
+    margin: 10px 0 0 40px;
+  }
+  .new-directions h1 {
+    font-size: 60px;
+  }
+  .new-directions {
+    background-color: #4cc9f0;
+    height: 55vh;
+  }
+}
+
+/* Tablet  */
+@media screen and (min-width: 768px) {
+  .why-member img {
+    width: 80%;
+  }
+  .why-member p {
+    width: 60%;
+    margin: 0 0 0 180px;
+    text-align: right;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .access img,
+  .support img {
+    width: 100%;
+  }
+  .why-member p {
+    width: 50%;
+    margin: 0 0 0 510px;
+    text-align: right;
+  }
+}
