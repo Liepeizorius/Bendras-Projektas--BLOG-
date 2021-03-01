@@ -1,9 +1,10 @@
 // Variables
 const signInButtons = document.querySelectorAll(".sign-in");
-const closeBtn = document.querySelector(".closebtn");
+const closeBtn = document.querySelector(".closebtn1");
 
 // Function
 async function openSignIn() {
+  console.log("a");
   document.getElementById("mySignIn").style.height = "100%";
   document.getElementById("mySignIn").style.width = "50%";
   document.getElementById("mySignIn").style.justifyContent = "center";
@@ -14,7 +15,8 @@ async function closeSignIn() {
 }
 
 // Events
-signInButtons.forEach((item) => {
-  item.addEventListener("click", openSignIn);
-});
-closeBtn.addEventListener("click", closeSignIn);
+// signInButtons.forEach((item) => {
+//   item.addEventListener("click", openSignIn);
+// });
+// closeBtn.addEventListener("click", closeSignIn);
+console.log(closeBtn);

@@ -39,7 +39,7 @@
               <li><a href="../pages/write.html">Write</a></li>
               <li><a href="#">Sign In</a></li>
             </ul>
-            <button type="button" class="btn sign-in btn-dark" id="navbar-btn">
+            <button type="button" class="btn sign-in btn-dark" id="navbar-btn" onclick="openSignIn()">
               Become a member
             </button>
           </div>
@@ -97,7 +97,7 @@
       </section>
       <section class="new-directions">
         <h1>Take your mind to new directions</h1>
-        <button type="button" class="btn sign-in btn-primary">
+        <button type="button" class="btn sign-in btn-primary" onclick="openSignIn()">
           Become a member
         </button>
         <div>
@@ -110,8 +110,8 @@
     </section>
     <!-- Sign-In form -->
     <section id="mySignIn" class="signin-options overlay">
-      <div class="overlay-content">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overlay-content" onclick="closeSignIn()">
+        <a href="javascript:void(0)" class="closebtn1">&times;</a>
         <h6>Join Medium.</h6>
         <div class="external-signin-tags">
           <div>
