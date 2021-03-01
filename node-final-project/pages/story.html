@@ -14,7 +14,31 @@
     />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <!-- Navigation bar -->
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">
+            <a href="../pages/index.html">Medium</a>
+          </span>
+          <div class="nav-items">
+            <ul>
+              <li><a href="../pages/story.html">Our Story</a></li>
+              <li><a href="../pages/membership.html">Membership</a></li>
+              <li><a href="../pages/write.html">Write</a></li>
+              <li><a href="../pages/log-in.html">Sign In</a></li>
+            </ul>
+            <button
+              type="button"
+              class="btn sign-in btn-dark sign-in"
+              id="navbar-btn"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <section class="headline max-vw-100">
@@ -175,6 +199,53 @@
       </section>
     </main>
 
+    <section id="mySignIn" class="signin-options overlay">
+      <div class="overlay-content">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <h6>Join Medium.</h6>
+        <div class="external-signin-tags">
+          <div>
+            <a
+              class="external-signin"
+              href="//medium.com/m/connect/google?state=google-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dregister--------------------------lo_home_nav-----------%7Cregister&amp;source=register--------------------------lo_home_nav-----------"
+            >
+              <i class="fab fa-google"></i>
+              Sign Up with Google</a
+            >
+          </div>
+          <div>
+            <a
+              href="//medium.com/m/account/authenticate-twitter?state=twitter-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dlogin--------------------------lo_home_nav-----------%7Clogin&amp; source=login--------------------------lo_home_nav-----------"
+              class="external-signin"
+            >
+              <i class="fab fa-twitter"></i> Sign in with Twitter</a
+            >
+          </div>
+          <div>
+            <a
+              href="//medium.com/m/connect/facebook?state=facebook-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dregister--------------------------lo_home_nav-----------%7Cregister&amp;source=register--------------------------lo_home_nav-----------"
+              class="external-signin"
+              ><i class="fab fa-facebook-f"></i> Sign up with Facebook</a
+            >
+          </div>
+
+          <div class="signIn-internal">
+            <a href="" class="external-signin"
+              ><i class="far fa-envelope"></i> Sign up with email</a
+            >
+          </div>
+          <div class="signin-info">
+            <p>Already have an account?<a href="">Sign In</a></p>
+            <p>
+              Click "Sign Up" to agree to<a href="">Terms of Service</a>and
+              acknowledge that the <a href="">Privacy policy</a> applies to
+              you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer></footer>
 
     <script
@@ -182,5 +253,6 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/story.js"></script>
   </body>
 </html>
