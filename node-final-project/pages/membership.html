@@ -4,22 +4,158 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome linkas -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrapo linkas -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/header.css" />
-    <link rel="stylesheet" href="../styles/membership.css" />
-    <script src="membership.js" defer></script>
+
+    <link rel="stylesheet" href="../styles/header.css"/>
+    <link rel="stylesheet" href="../styles/membership.css"/>
+    <script src="../scripts/membership.js"></script>
     <title>Membership</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <!-- Navigation bar -->
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">
+            <a href="../pages/index.html">Medium</a>
+          </span>
+          <div class="nav-items">
+            <ul>
+              <li><a href="../pages/story.html">Our Story</a></li>
+              <li><a href="../pages/membership.html">Membership</a></li>
+              <li><a href="../pages/write.html">Write</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+            <button type="button" class="btn sign-in btn-dark" id="navbar-btn" onclick="openSignIn()">
+              Become a member
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
     ‍
-    <main></main>
+    <main>
+      <section class="big-headline">
+        <h1>Get the most from Medium.</h1>
+        <p>Upgrade to membership for $5/month or $50/year.</p>
+        <button type="button" class="btn sign-in btn-primary">
+          Subscribe today
+        </button>
+      </section>
+      <section class="options">
+        <div class="access">
+          <h2>Get unlimited access to every story.</h2>
+          <div>
+            <img
+              src="https://cdn-static-1.medium.com/sites/medium.com/membership/images/UnlimitedReading.svg"
+              alt=""
+            />
+          </div>
+          <p>
+            Read any article in our entire library across all your devices —
+            with no paywalls, story limits or ads.
+          </p>
+        </div>
+        <div class="support">
+          <h2>Support the voices you want to hear more from.</h2>
+          <div>
+            <img
+              src="https://cdn-static-1.medium.com/sites/medium.com/membership/images/SupportWriters.svg"
+              alt=""
+            />
+          </div>
+          <p>
+            A portion of your membership will directly support the writers and
+            thinkers you read the most.
+          </p>
+        </div>
+      </section>
+      <section class="why-member">
+        <h2>Why I'm a Medium Member...</h2>
+        <div class="feedback">
+          <div><img src="../images/Membership_Molina-1.png" alt="" /></div>
+          <p>
+            "I love Medium’s membership — it gives me access to the stories I
+            love by the writers I love, and it allows me to help support those
+            writers financially."
+          </p>
+        </div>
+        <p>Kayt Molina</p>
+      </section>
+      <section class="new-directions">
+        <h1>Take your mind to new directions</h1>
+        <button type="button" class="btn sign-in btn-primary" onclick="openSignIn()">
+          Become a member
+        </button>
+        <div>
+          <img
+            src="https://cdn-static-1.medium.com/sites/medium.com/membership/images/Membership_Footer.svg"
+            alt=""
+          />
+        </div>
+      </section>
+    </section>
+    <!-- Sign-In form -->
+    <section id="mySignIn" class="signin-options overlay">
+      <div class="overlay-content" onclick="closeSignIn()">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <h6>Join Medium.</h6>
+        <div class="external-signin-tags">
+          <div>
+            <a
+              class="external-signin"
+              href="//medium.com/m/connect/google?state=google-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dregister--------------------------lo_home_nav-----------%7Cregister&amp;source=register--------------------------lo_home_nav-----------"
+            >
+              <i class="fab fa-google"></i>
+              Sign Up with Google</a
+            >
+          </div>
+          <div>
+            <a
+              href="//medium.com/m/account/authenticate-twitter?state=twitter-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dlogin--------------------------lo_home_nav-----------%7Clogin&amp; source=login--------------------------lo_home_nav-----------"
+              class="external-signin"
+            >
+              <i class="fab fa-twitter"></i> Sign in with Twitter</a
+            >
+          </div>
+          <div>
+            <a
+              href="//medium.com/m/connect/facebook?state=facebook-%7Chttps%3A%2F%2Fmedium.com%2F%3Fsource%3Dregister--------------------------lo_home_nav-----------%7Cregister&amp;source=register--------------------------lo_home_nav-----------"
+              class="external-signin"
+              ><i class="fab fa-facebook-f"></i> Sign up with Facebook</a
+            >
+          </div>
+
+          <div>
+            <a href="" class="external-signin"
+              ><i class="far fa-envelope"></i> Sign up with email</a
+            >
+          </div>
+          <div class="signin-info">
+            <p>Already have an account?<a href="">Sign In</a></p>
+            <p>
+              Click "Sign Up" to agree to<a href="">Terms of Service</a>and
+              acknowledge that the <a href="">Privacy policy</a> applies to
+              you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
     <footer></footer>
   </body>
 </html>
