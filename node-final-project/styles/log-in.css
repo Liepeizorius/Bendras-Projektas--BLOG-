@@ -12,7 +12,7 @@
   
   .logBox {
       margin-top: 100px;
-      width: 15%;
+      width: 20%;
       height: 375px;
       background: gainsboro;
       display: flex;
@@ -75,7 +75,7 @@
   @media (max-width: 1500px) {
   
     .logBox {
-      width: 45%;
+      width: 25%;
   }
   
   }
@@ -83,7 +83,7 @@
   @media (max-width: 1080px) {
   
     .logBox {
-      width: 75%;
+      width: 50%;
   }
   
   }
@@ -106,18 +106,11 @@
         margin-left: 0;
     }
   
+
+    
     .logBox {
-      width: 100%;
-      height: 600px;
-      background: gainsboro;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: lato, sans-serif;
-      border: solid 1px silver;
-      border-radius: 10px;
+      width: 75%;
   }
-  
   }
   
   
