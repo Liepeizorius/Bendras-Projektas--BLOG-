@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE Exam</title>
-    <link rel="stylesheet" href="../styles/signUp.css">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../styles/sign-up.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
 </head>
 <body>
 <div class="boxContainer">
-  <div class="formbox">
+  <div class="formBox">
     <div class="heading">
         <h1>Sign-Up</h1>
     </div>
     <form class="form">
         <div class="formInputs">
-            <div class="formitem">
+            <div class="formItem">
                 <label for="Username">Username</label>
-                <input type="text" name="Username">
+                <input type="text" name="Username" id="username">
             </div>
-            <div class= "formitem password">
+            <div class= "formItem password">
                 <label for="Password">Password</label>
-                <input type="text" name="Password">
+                <input type="text" name="Password" id="password">
             </div>
         </div>
-        <div class="formitem email">
+        <div class="formItem email">
             <label for="email">Your e-mail address</label>
-            <input type="text" name="email">
+            <input type="email" name="email" id="email">
         </div>
 
-        <button class="sbutton">Submit</button>
+        <button id="sSubmit" class="sButton">Submit</button>
     </form>
     <div class="note">
-      <p  class="note1">Already have an account?<a href=""> Sign In</a></p>
+      <p  class="note1">Already have an account?<a id="signinLink" href=""> Sign In</a></p>
       <p>
         By clicking "Submit" you are agreeing to the<a href=""> Terms of Service </a>and
         acknowledging that the <a href=""> Privacy policy </a> applies to you.

@@ -3,7 +3,7 @@ const UserController = require('./userController');
 const UserMiddleware = require('./authenticate');
 
 router.get('/', (request, response) => {
-  response.send('Hello world!');
+  response.json('Hello world!');
 });
 
 router.post('/scripts/signup', UserController.signUp);
