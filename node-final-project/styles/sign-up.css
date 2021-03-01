@@ -108,6 +108,11 @@ input {
 
 @media (max-width: 550px){
 
+.password {
+    margin-left: 0px;
+}
+
+
 .form {
       min-width: 300px;
   }
