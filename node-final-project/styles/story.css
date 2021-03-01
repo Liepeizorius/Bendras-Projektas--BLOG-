@@ -1,0 +1,303 @@
+/* Resets */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+.headline {
+  font-family: Lobster;
+  font-size: 50px;
+  text-align: center;
+  padding: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.headline p {
+  text-shadow: 1px 1px 3px black;
+}
+
+.animated-logo {
+  padding: 20px;
+}
+
+.animated-logo p {
+  font-size: 8px;
+}
+
+.tablet-logo {
+  display: none;
+}
+
+.about-story {
+  font-family: Roboto;
+  font-size: 18px;
+  padding: 0px 30px;
+  border-bottom: 2px solid black;
+}
+
+.contributors {
+  font-family: Lobster;
+  padding: 20px;
+  background-color: #8839bd;
+  color: #fff;
+  border-bottom: 2px solid black;
+}
+
+.contributor {
+  width: 100%;
+}
+
+.contributors .thanks {
+  font-size: 28px;
+}
+
+.contributor p {
+  font-family: Roboto;
+  padding: 10px 0;
+  font-size: 22px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Carousel */
+
+.recommendations {
+  border-bottom: 2px solid white;
+  background-color: #3a0ca3;
+  color: #fff;
+}
+
+.separate {
+  display: none;
+}
+
+.recommendations h4 {
+  font-size: 30px;
+  font-family: Lobster;
+  padding: 20px;
+}
+
+.carousel-item {
+  padding: 20px;
+}
+
+.carousel-item p {
+  font-size: 20px;
+}
+
+/* WRITE CTA */
+
+.cta {
+  border-bottom: 2px solid black;
+  background-color: #3a0ca3;
+  color: #fff;
+}
+
+.cta h5 {
+  font-size: 30px;
+  font-family: Lobster;
+  padding: 20px;
+}
+
+.cta p {
+  font-size: 20px;
+  font-family: Roboto;
+  padding: 20px;
+}
+
+.cta .button a {
+  font-size: 24px;
+}
+
+.button {
+  margin-bottom: 20px;
+}
+
+/* MEMBERSHIP CTA */
+.membership-cta {
+  color: #fff;
+  background-color: black;
+  border-bottom: 2px solid black;
+}
+.membership-cta h5 {
+  font-size: 30px;
+  font-family: Lobster;
+  padding: 20px;
+}
+.membership-cta p {
+  font-size: 24px;
+  font-family: Roboto;
+  padding: 20px;
+}
+
+.membership-cta .button {
+  margin-bottom: 20px;
+}
+.membership-cta .button a {
+  font-size: 24px;
+}
+
+/* TABLET */
+@media screen and (min-width: 650px) {
+  .headline {
+    font-size: 60px;
+  }
+  .headline .animated-logo {
+    display: none;
+  }
+  .about-story {
+    display: flex;
+  }
+  .about-text {
+    padding: 20px 0px;
+    padding-right: 20px;
+    border-right: 2px solid black;
+    width: 70%;
+    text-align: left;
+  }
+  .tablet-logo {
+    transform: rotate(90deg);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: fit-content;
+    font-family: Lobster;
+    text-align: center;
+  }
+  .tablet-logo h2 {
+    font-size: 36px;
+  }
+  .thanks p {
+    font-size: 38px;
+  }
+  .contributor-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contributor {
+    width: 50%;
+    padding: 5px;
+  }
+  .contributor p {
+    text-align: center;
+    font-size: 28px;
+  }
+  .contributor-container :nth-child(9) {
+    text-align: center;
+    width: 100%;
+  }
+  .carousel-item p {
+    font-size: 28px;
+  }
+  .cta h5 {
+    font-size: 42px;
+  }
+  .cta p {
+    font-size: 24px;
+  }
+  .membership-cta h5 {
+    font-size: 42px;
+  }
+  .membership-cta p {
+    font-size: 24px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+  .headline {
+    font-size: 100px;
+  }
+  .tablet-logo {
+    transform: rotate(0deg);
+    margin-left: 80px;
+    text-align: center;
+    font-family: Lobster;
+  }
+  .contributor {
+    width: 33%;
+    padding: 5px;
+  }
+  .thanks p {
+    font-size: 42px;
+  }
+  .contributor p {
+    font-size: 28px;
+  }
+  .contributor-container :nth-child(9) {
+    text-align: left;
+    width: 33%;
+    padding: 5px;
+  }
+  .recommendations h4 {
+    display: none;
+  }
+  .combined {
+    display: flex;
+  }
+  .recommendations {
+    background-color: black;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .separate {
+    font-family: Lobster;
+    background-color: black;
+    color: #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: block;
+    padding: 40px;
+    width: fit-content;
+  }
+  .separate h4 {
+    font-size: 70px;
+  }
+  .carousel-item p {
+    font-size: 40px;
+  }
+  .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta h5 {
+    font-size: 80px;
+    text-align: center;
+  }
+  .cta p {
+    width: 30%;
+    font-size: 24px;
+    text-align: center;
+  }
+  .cta button {
+    width: 50%;
+  }
+
+  .membership-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .membership-cta h5 {
+    font-size: 80px;
+    text-align: center;
+  }
+  .membership-cta p {
+    width: 30%;
+    font-size: 24px;
+    text-align: center;
+  }
+  .membership-cta .button a {
+    font-size: 24px;
+  }
+}
