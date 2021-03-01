@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /* Mobile first */
 /* Variables */
@@ -7,8 +7,8 @@
   --primary-white-color: rgb(236, 247, 236);
   --primary-dark-text-color: rgb(17, 15, 15);
   --text-grey-color: rgb(161, 153, 153);
-  --headline-font: "Lobster";
-  --text-font: "Roboto", sans-serif;
+  --headline-font: 'Lobster';
+  --text-font: 'Roboto', sans-serif;
   --text-padding: 15px;
 }
 
@@ -32,10 +32,18 @@ header {
 .navbar-brand span a {
   font-weight: 500;
 }
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-items ul {
   display: none;
   list-style: none;
   text-decoration: none;
+  margin: 0;
 }
 #navbar-btn {
   display: block;
@@ -53,7 +61,7 @@ nav a {
     display: flex;
   }
   .btn-dark {
-    margin: 0 0 0 240px;
+    margin: 0 0 0 10px;
   }
   .navbar {
     display: flex;

@@ -1,7 +1,7 @@
 /* Resets */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* @import './index.css'; */
+@import './index.css';
 * {
   margin: 0;
   padding: 0;
@@ -62,6 +62,7 @@ nav a {
 
 .headline p {
   text-shadow: 1px 1px 3px black;
+  color: black;
 }
 
 .animated-logo {
