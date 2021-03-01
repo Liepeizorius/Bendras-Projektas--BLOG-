@@ -89,6 +89,10 @@ nav a {
   font-weight: 600;
 }
 
+.welcome-desktop {
+  display: none;
+}
+
 .welcoming-intro p {
   color: #fff;
   text-shadow: 1px 2px 5px black;
@@ -107,6 +111,43 @@ nav a {
   border-bottom: 2px solid #fff;
 }
 
+.start {
+  background-color: #3f37c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start h3 {
+  color: #fff;
+  font-family: Lobster;
+  font-size: 42px;
+  text-align: center;
+  margin: 10px;
+}
+.start p {
+  text-align: center;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+#write {
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+
+#write a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+#write:hover a {
+  color: black;
+}
+
 /* .welcoming-intro div {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
@@ -122,5 +163,44 @@ nav a {
   }
   .navbar {
     display: flex;
+  }
+
+  .store-cta h1 {
+    font-size: 62px;
+  }
+
+  #human {
+    min-width: 70%;
+    height: 50%;
+  }
+
+  .welcoming-intro {
+    font-size: 18px;
+  }
+  .welcoming-intro h2 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .welcoming-intro {
+    display: flex;
+  }
+  .welcome {
+    display: none;
+  }
+  .welcome-desktop {
+    display: flex;
+    flex-direction: column;
+  }
+  .download {
+    display: none;
+  }
+  .store-btns {
+    display: none;
+  }
+
+  #human {
+    margin: 30px;
   }
 }
