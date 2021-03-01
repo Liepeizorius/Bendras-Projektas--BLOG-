@@ -1,5 +1,5 @@
-@import '../styles/header.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import "../styles/header.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 /* Mobile first */
 
 .main {
@@ -17,7 +17,7 @@
 }
 
 .intro {
-  background-image: url('../images/spaceman.jpg');
+  background-image: url("../images/spaceman.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   max-width: 100%;
