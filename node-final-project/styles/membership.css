@@ -27,7 +27,13 @@ main p {
   padding: 10px 0;
   font-family: var(--text-font);
 }
-*/ h1 {
+.feedback p,
+.feedback-user-name {
+  color: rgb(82, 75, 75);
+  font-family: var(--text-font);
+  font-size: 18px;
+}
+* h1 {
   font-family: var(--headline-font);
   font-size: 35px;
   padding: var(--text-padding);
