@@ -9,8 +9,9 @@ window.onload = function() {
             password,
             email
         }
+        console.log(data)
 
-        try {
+     try {
             const response = await fetch('http://localhost:1111/api/v1/scripts/signup', {
                 method: 'POST',
                 headers: {
@@ -19,7 +20,7 @@ window.onload = function() {
     
                 body: JSON.stringify(data)
             })
-            
+            console.log(response)
             if (response.status != 200) throw await response.json()
 
             let token = response.headers.get('user-auth')
@@ -30,11 +31,6 @@ window.onload = function() {
         
         } catch(e) {
             console.log(e)
-        }
-
+        } 
     })
   }
-
-document.querySelector('#signinLink').addEventListener('click', (e) => { 
-    window.location.href = './log-in'
-}
