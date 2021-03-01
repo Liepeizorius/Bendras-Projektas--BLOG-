@@ -258,13 +258,8 @@ h6 {
   .user {
     width: 50%;
   }
-  .signin-options {
-    width: 50%;
-  }
-  #close-sign i {
-    margin: 10px 0 0 350px;
-  }
 }
+
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .user {
