@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formBox {
+    margin-top: 100px;
+    width: 35%;
+    height: 600px;
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: lato, sans-serif;
+    border: solid 1px silver;
+    border-radius: 10px;
+}
+
+.heading {
+  padding-top: 80px;
+}
+
+.formInputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    padding-bottom: 6px;
+}
+
+input {
+    width: 200px;
+    height: 24px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.password {
+    margin-left: 12px;
+}
+
+.email {
+    padding-top: 12px;
+}
+
+.email input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 24px;
+    font-size: 18px;
+}
+
+.sButton {
+    background: #2dabf9;
+    color: #fff;
+    border: 1px solid #00aca8;
+    border-radius: 5px;
+    transition: all .6s;
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 30px;
+}  
+
+.sButton:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  border: solid 1px navy;
+}
+
+.note {
+  padding: 20px;
+}
+
+.note1 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1500px) {
+
+  .formBox {
+    width: 45%;
+}
+
+}
+
+@media (max-width: 1080px) {
+
+  .formBox {
+    width: 75%;
+}
+
+}
+
+@media (max-width: 550px){
+
+.form {
+      min-width: 300px;
+  }
+
+.formInputs {
+      display: block;
+  }
+
+input {
+      width: 100%;
+  }
+  
+ .boxContainer .formbox .form .formInputs .formItem+.formItem {
+      margin-left: 0;
+  }
+
+  .formBox {
+    width: 100%;
+    height: 600px;
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: lato, sans-serif;
+    border: solid 1px silver;
+    border-radius: 10px;
+}
+
+}
+
