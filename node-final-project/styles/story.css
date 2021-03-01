@@ -1,6 +1,7 @@
 /* Resets */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import './index.css'; */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,48 @@
 }
 
 /* MOBILE FIRST */
+
+/* Header and navbar */
+header {
+  border-bottom: 1px solid rgb(17, 16, 16);
+  position: sticky;
+  max-width: 100vw;
+}
+
+.container-fluid span a {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.navbar-brand span a {
+  font-weight: 500;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items ul {
+  display: none;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+#navbar-btn {
+  display: block;
+  margin: 10;
+}
+.nav-items ul li {
+  margin: 0 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
 .headline {
   font-family: Lobster;
   font-size: 50px;
@@ -144,6 +187,10 @@
 
 /* TABLET */
 @media screen and (min-width: 650px) {
+  .nav-items ul {
+    display: flex;
+  }
+
   .headline {
     font-size: 60px;
   }

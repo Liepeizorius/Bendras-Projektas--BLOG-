@@ -186,12 +186,36 @@ nav a {
   .welcoming-intro {
     display: flex;
   }
+  .build {
+    border: none;
+  }
   .welcome {
     display: none;
   }
   .welcome-desktop {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .welcome-desktop p {
+    font-size: 20px;
+  }
+
+  .welcome-desktop .btn {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .welcome-desktop a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .welcome-desktop .btn:hover a {
+    text-decoration: none;
+    color: black;
   }
   .download {
     display: none;
@@ -202,5 +226,22 @@ nav a {
 
   #human {
     margin: 30px;
+  }
+
+  .start {
+    display: none;
+  }
+
+  .share,
+  .build,
+  .earn {
+    padding: 30px;
+  }
+
+  .share {
+    border-right: 2px solid #fff;
+  }
+  .build {
+    border-right: 2px solid #fff;
   }
 }
