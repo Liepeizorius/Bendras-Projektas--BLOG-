@@ -51,7 +51,7 @@
       <section class="big-headline">
         <h1>Get the most from Medium.</h1>
         <p>Upgrade to membership for $5/month or $50/year.</p>
-        <button type="button" class="btn sign-in btn-primary">
+        <button type="button" class="btn sign-in btn-primary" onclick="openSignIn()">
           Subscribe today
         </button>
       </section>
@@ -110,8 +110,8 @@
     </section>
     <!-- Sign-In form -->
     <section id="mySignIn" class="signin-options overlay">
-      <div class="overlay-content" onclick="closeSignIn()">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overlay-content">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSignIn()">&times;</a>
         <h6>Join Medium.</h6>
         <div class="external-signin-tags">
           <div>

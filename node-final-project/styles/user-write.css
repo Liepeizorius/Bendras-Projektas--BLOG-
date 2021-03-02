@@ -1,0 +1,71 @@
+@import "../styles/header.css";
+#headline-input {
+  width: 300px;
+}
+
+.story-content h2,
+.story-content h3 {
+  margin: 15px 0;
+  font-family: var(--headline-font);
+  color: var(--primary-white-color);
+}
+.story-content {
+  justify-content: center;
+  max-width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(76, 12, 98, 1) 27%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  text-align: center;
+}
+#toggle-btn {
+  cursor: pointer;
+  margin: auto;
+  justify-content: end;
+}
+.story-content input {
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.story-content textarea {
+  max-width: 100%;
+}
+#submit-story,
+.w-100 {
+  font-family: var(--headline-font);
+  margin: 20px 0;
+  border-width: 0;
+}
+#submit-story:hover,
+.w-100:hover {
+  background-color: rgb(32, 6, 32);
+  color: var(--primary-white-color);
+}
+.navbar-wrapper-active {
+  display: flex;
+}
+#fileInput {
+  margin: auto;
+  width: 80%;
+}
+/* #uploadFile {
+  margin: auto;
+  width: 80%;
+} */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  #toggle-btn {
+    display: none;
+  }
+  #uploadFile {
+    width: 50%;
+  }
+  #fileInput {
+    margin: auto;
+    width: 40%;
+  }
+}
