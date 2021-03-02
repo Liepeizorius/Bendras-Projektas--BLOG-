@@ -1,16 +1,16 @@
 // Variables
 let token;
-let globalItems;
+let globalArticles;
 let url = "http://localhost:1111/api/v1/";
 window.addEventListener("DOMContentLoaded", function () {
   token = localStorage.getItem("user-auth");
   if (!token) {
     window.location.href = "/user-write";
   }
-  getAllItems();
+  getAllArticles();
 });
 // Input išsiuntimas į serverį
-document.getElementById("submitButton").addEventListener("click", async () => {
+document.getElementById("submit-story").addEventListener("click", async () => {
   let value = document.querySelector("form").value;
   if (!value) return;
   let body = {
@@ -38,6 +38,33 @@ document.getElementById("submitButton").addEventListener("click", async () => {
   }
 });
 // Functions
+async function getAllArticles() {
+  try {
+    const response = await fetch(url + "article", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "user-auth": token,
+      },
+    });
+    if (response.status != 200) throw await response.json();
+    let items = await response.json();
+    globalArticles = items;
+    displayAllArticles(items);
+  } catch (e) {
+    console.log(e);
+  }
+}
+// Displaying all articles
+const displayAllArticles = (articles) => {
+  let div = document.querySelector(".user-article-headline");
+  let articleItems = "";
+  articles.forEach((article) => {
+    articleItems += `<h2 class="user-article-headline">${article.headline}</h2>`;
+  });
+  div.innerHTML = articleItems;
+};
+
 function displayNavBar() {
   document.querySelector(".nav-items").style.display = "block";
 }

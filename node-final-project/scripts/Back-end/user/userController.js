@@ -1,7 +1,6 @@
-const User = require('./userModel');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const Article = require('./articleModel');
+const User = require("./userModel");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
 signUp = async (request, response) => {
   let user = new User(request.body);
@@ -22,15 +21,15 @@ login = async (request, response) => {
     if (!user) throw "User doesn't exist";
 
     let res = await bcrypt.compare(request.body.password, user.password);
-    if (!res) throw 'incorrect password';
+    if (!res) throw "incorrect password";
 
     let token = await jwt
-      .sign({ id: user._id.toHexString() }, 'superSecret')
+      .sign({ id: user._id.toHexString() }, "superSecret")
       .toString();
 
     user.sessionToken.push({ token });
     await user.save();
-    response.header('user-auth', token).json(user);
+    response.header("user-auth", token).json(user);
   } catch (e) {
     console.log(e);
     response.status(401).json(e);
@@ -48,7 +47,7 @@ logout = async (request, response) => {
         },
       },
     });
-    response.json('successful logout');
+    response.json("successful logout");
   } catch (e) {
     response.status(400).json(e);
   }
@@ -62,7 +61,6 @@ getAllUsers = (request, response) => {
   });
 };
 
-
 getAllArticles = (request, response) => {
   console.log(0);
   Article.find({}, (items, error) => {
@@ -70,8 +68,6 @@ getAllArticles = (request, response) => {
     response.json(items);
   });
 };
-
-
 
 module.exports = {
   signUp,
