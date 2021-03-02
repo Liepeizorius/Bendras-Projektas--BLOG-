@@ -1,6 +1,7 @@
 const User = require('./userModel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const Article = require('./articleModel');
 
 signUp = async (request, response) => {
   let user = new User(request.body);
@@ -60,6 +61,17 @@ getAllUsers = (request, response) => {
     response.json(items);
   });
 };
+
+
+getAllArticles = (request, response) => {
+  console.log(0);
+  Article.find({}, (items, error) => {
+    if (error) return response.json(error);
+    response.json(items);
+  });
+};
+
+
 
 module.exports = {
   signUp,
