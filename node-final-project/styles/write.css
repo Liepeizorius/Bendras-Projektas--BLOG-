@@ -296,7 +296,10 @@ h6 {
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
+  .container-fluid span a {
+    font-size: 32px;
+  }
   .nav-items ul {
     display: flex;
     justify-content: center;

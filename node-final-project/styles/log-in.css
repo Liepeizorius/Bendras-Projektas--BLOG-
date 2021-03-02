@@ -1,116 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .logContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .logBox {
-      margin-top: 100px;
-      width: 20%;
-      height: 375px;
-      background: gainsboro;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      font-family: lato, sans-serif;
-      border: solid 1px silver;
-      border-radius: 10px;
-  }
-  
-  .heading {
-    padding-top: 50px;
-  }
-  
-  .logInputs {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-  }
-  
-  label {
-      display: block;
-      padding-bottom: 6px;
-  }
-  
-  input {
-      width: 200px;
-      height: 24px;
-      font-size: 18px;
-      box-sizing: border-box;
-  }
-  
-  .logPassword {
-    margin-top: 15px;
-  }
-  
-  .logButton {
-      background: #2dabf9;
-      color: #fff;
-      border: 1px solid #00aca8;
-      border-radius: 5px;
-      transition: all .6s;
-      text-decoration: none;
-      padding: 8px;
-      text-align: center;
-      font-size: 14px;
-      font-weight: 600;
-      width: 100%;
-      font-family: inherit;
-      cursor: pointer;
-      margin-top: 30px;
-  }  
-  
-  .logButton:hover {
-    background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
-    border: solid 1px navy;
-  }
-  
-  @media (max-width: 1500px) {
-  
-    .logBox {
-      width: 25%;
-  }
-  
-  }
-  
-  @media (max-width: 1080px) {
-  
-    .logBox {
-      width: 50%;
-  }
-  
-  }
-  
-  @media (max-width: 550px){
-  
-  .form {
-        min-width: 300px;
-    }
-  
-  .formInputs {
-        display: block;
-    }
-  
-  input {
-        width: 100%;
-    }
-    
-   .logContainer .logBox .form .formInputs .logItem+.logItem {
-        margin-left: 0;
-    }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    
-    .logBox {
-      width: 75%;
+/* NAVBAR */
+.container-fluid {
+  display: flex;
+}
+
+.navbar-brand a {
+}
+
+.logContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logBox {
+  margin-top: 100px;
+  width: 20%;
+  height: 375px;
+  background: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: lato, sans-serif;
+  border: solid 1px silver;
+  border-radius: 10px;
+}
+
+.heading {
+  padding-top: 50px;
+}
+
+.logInputs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  padding-bottom: 6px;
+}
+
+input {
+  width: 200px;
+  height: 24px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.logPassword {
+  margin-top: 15px;
+}
+
+.logButton {
+  background: #2dabf9;
+  color: #fff;
+  border: 1px solid #00aca8;
+  border-radius: 5px;
+  transition: all 0.6s;
+  text-decoration: none;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.logButton:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  border: solid 1px navy;
+}
+
+@media (max-width: 1500px) {
+  .logBox {
+    width: 25%;
   }
+}
+
+@media (max-width: 1080px) {
+  .logBox {
+    width: 50%;
   }
-  
-  
+}
+
+@media (max-width: 550px) {
+  .form {
+    min-width: 300px;
+  }
+
+  .formInputs {
+    display: block;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .logContainer .logBox .form .formInputs .logItem + .logItem {
+    margin-left: 0;
+  }
+
+  .logBox {
+    width: 75%;
+  }
+}

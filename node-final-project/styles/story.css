@@ -339,6 +339,14 @@ h6 {
 
 /* TABLET */
 @media screen and (min-width: 650px) {
+  /* .navbar {
+    margin: 20px 0;
+  } */
+
+  .container-fluid span a {
+    font-size: 32px;
+  }
+
   .nav-items ul {
     display: flex;
   }

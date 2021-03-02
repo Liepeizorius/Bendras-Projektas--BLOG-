@@ -1,5 +1,5 @@
-@import "../styles/header.css";
-@import "../styles/index.css";
+@import '../styles/header.css';
+@import '../styles/index.css';
 /* Mobile first */
 * {
   margin: 0;
@@ -8,7 +8,6 @@
 body {
   max-width: 100%;
   margin: auto;
-  padding: 5px;
 }
 .big-headline,
 .options {
@@ -111,13 +110,13 @@ h2 {
 
 .new-directions h1 {
   color: var(--primary-white-color);
-  font-family: "Lobster";
+  font-family: 'Lobster';
   font-size: 35px;
   margin-bottom: 30px;
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
   .feedback {
     display: flex;
   }
@@ -136,7 +135,13 @@ h2 {
 }
 
 /* Tablet  */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .why-member img {
     width: 80%;
   }
@@ -147,7 +152,7 @@ h2 {
   }
 }
 /* Desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .access img,
   .support img {
     width: 100%;
