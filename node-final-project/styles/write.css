@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import "./index.css";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Mobile first */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 /* Header and navbar */
 header {
@@ -149,10 +148,151 @@ nav a {
   color: black;
 }
 
-/* .welcoming-intro div {
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-} */
+/* SIGN IN/UP FORMA */
+.signin-options {
+  border: 1px solid var(--text-grey-color);
+  justify-content: center;
+  text-align: center;
+}
+#close-sign i {
+  justify-content: right;
+  margin: 10px 0 0 350px;
+  cursor: pointer;
+  width: 30%;
+}
+.signin-options {
+  display: block;
+  z-index: 2;
+  position: absolute;
+  max-width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.external-signin {
+  border: 1px solid var(--text-grey-color);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--primary-dark-text-color);
+}
+.external-signin-tags div {
+  text-align: center;
+  margin: 25px;
+}
+.external-signin-tags a {
+  padding: 5px;
+}
+.external-signin-tags p {
+  text-align: justify;
+  width: 100%;
+  margin: auto;
+}
+h6 {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin: 80px 10px;
+}
+
+.signin-info p {
+  color: var(--text-grey-color);
+  font-size: 18px;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.close-sign p {
+  color: black;
+  width: 50px;
+}
+.fa-twitter {
+  color: rgb(71, 171, 230);
+}
+.fa-facebook-f {
+  color: rgb(63, 63, 156);
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(252, 252, 252);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #070606;
+  font-weight: 600;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay a {
+  font-size: 20px;
+}
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+/* Internal sign-in form */
+.overlay2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(252, 252, 252);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay2 a:hover,
+.overlay a:focus {
+  color: #070606;
+  font-weight: 600;
+}
+
+.overlay2 .closebtn2 {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay2 a {
+  font-size: 20px;
+}
+.overlay2 .closebtn2 {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
 
 /* Tablet */
 @media screen and (min-width: 768px) {
