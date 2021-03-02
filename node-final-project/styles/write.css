@@ -36,9 +36,10 @@ header {
   margin: 0;
   padding: 0;
 }
+
 #navbar-btn {
   display: block;
-  margin: 10;
+  margin: 10px;
 }
 .nav-items ul li {
   margin: 0 10px;
@@ -298,6 +299,8 @@ h6 {
 @media screen and (min-width: 768px) {
   .nav-items ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .btn-dark {
     margin: 0 0 0 240px;
