@@ -79,15 +79,23 @@ document
 
     let formData = new FormData();
     formData.append("test", file);
+    formData.append("key", "value");
 
     try {
       const response = await fetch(url + "uploadImage", {
         method: "POST",
         headers: {
+          Accept: "application/json",
           "user-auth": token,
         },
         body: formData,
       });
+      console.log(response);
+      if (response.status != 200) throw await response.json();
+      let user = await response.json();
+      // Sukurti diva straipsnio nuotraukai
+      document.getElementById("article-display").src =
+        "http://http://localhost:1111/" + user.articleImageURL;
     } catch (e) {
       console.log(e);
     }

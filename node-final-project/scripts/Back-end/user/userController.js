@@ -69,6 +69,7 @@ getAllArticles = (request, response) => {
   });
 };
 
+
 module.exports = {
   signUp,
   login,

@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const UserController = require("../user/userController");
-const UserMiddleware = require("../authenticate");
+const UserMiddleware = require("../user/authenticate");
 const ArticleController = require("../article/articleController");
 
 // Padeda apdoroti failus, ateinančius į serverį
@@ -15,10 +15,6 @@ const storage = multer.diskStorage({
 });
 const upload = multer({
   storage,
-});
-
-router.get("/", (request, response) => {
-  response.json("Hello world!");
 });
 
 router.post("/scripts/Back-end/signup", UserController.signUp);
@@ -37,6 +33,12 @@ router.get(
   "/scripts/Back-end/",
   UserMiddleware.authenticate,
   UserController.getAllUsers
+);
+// Posting a picture
+router.post(
+  "/uploadImage",
+  upload.single("test"),
+  UserController.changeArticleImage
 );
 
 module.exports = router;

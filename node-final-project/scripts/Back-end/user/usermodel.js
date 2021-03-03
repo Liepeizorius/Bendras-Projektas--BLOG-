@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
-const validator = require('validator');
-const bcrypt = require('bcrypt');
+const mongoose = require("mongoose");
+const validator = require("validator");
+const bcrypt = require("bcrypt");
 
 let UserSchema = new mongoose.Schema({
   username: {
@@ -10,14 +10,14 @@ let UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: [true, 'Password is required.'],
+    required: [true, "Password is required."],
   },
   email: {
     type: String,
     required: true,
     validate: {
       validator: validator.isEmail,
-      message: 'Email is not valid.',
+      message: "Email is not valid.",
     },
   },
   sessionToken: [
@@ -27,10 +27,10 @@ let UserSchema = new mongoose.Schema({
   ],
 });
 
-UserSchema.pre('save', function (next) {
+UserSchema.pre("save", function (next) {
   let user = this;
   console.log(user);
-  if (user.isModified('password')) {
+  if (user.isModified("password")) {
     bcrypt.genSalt(10, (err, salt) => {
       bcrypt.hash(user.password, salt, (err, hash) => {
         user.password = hash;
@@ -42,7 +42,6 @@ UserSchema.pre('save', function (next) {
   }
 });
 
-let User = mongoose.model('User', UserSchema);
-
+let User = mongoose.model("User", UserSchema);
 
 module.exports = User;
