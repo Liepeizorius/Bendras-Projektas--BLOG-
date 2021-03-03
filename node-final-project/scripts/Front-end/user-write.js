@@ -1,4 +1,12 @@
 // Variables
+let url = "http://localhost:1111/api/v1/scripts/Back-end/";
+window.addEventListener("DOMContentLoaded", function () {
+  token = localStorage.getItem("user-auth");
+  if (!token) {
+    window.location.href = "/article-display";
+  }
+  // getAllArticles();
+});
 
 function displayNavBar() {
   document.querySelector(".nav-items").style.display = "block";

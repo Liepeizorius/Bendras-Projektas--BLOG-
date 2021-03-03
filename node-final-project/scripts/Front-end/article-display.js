@@ -1,6 +1,6 @@
 let token;
 let globalArticles;
-let url = "http://localhost:1111/api/v1/scripts/Back-end/";
+let url = "http://localhost:1111/api/v1/";
 window.addEventListener("DOMContentLoaded", function () {
   token = localStorage.getItem("user-auth");
   if (!token) {
@@ -28,7 +28,7 @@ async function getAllArticles() {
   }
 }
 // Displaying an article
-const displayAllArticles = (articles) => {
+async function displayAllArticles(articles) {
   let div = document.querySelector("#article-display");
   let articleItems = "";
   articles.forEach((article) => {
@@ -39,4 +39,4 @@ const displayAllArticles = (articles) => {
     `;
   });
   div.innerHTML = articleItems;
-};
+}
