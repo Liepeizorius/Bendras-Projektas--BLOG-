@@ -38,7 +38,8 @@ router.get(
 router.post(
   "/uploadImage",
   upload.single("test"),
-  UserController.changeArticleImage
+  UserMiddleware.authenticate,
+  ArticleController.saveArticle
 );
 
 module.exports = router;

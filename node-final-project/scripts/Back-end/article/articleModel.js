@@ -10,7 +10,7 @@ let ArticleSchema = new mongoose.Schema({
     required: true,
   },
   articleImageURL: {
-    token: String,
+    type: String,
   },
 });
 

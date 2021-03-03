@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/index.css" />
-    <script src="../scripts/Front-end/user-write.js"></script>
+    <script src="../scripts/Front-end/article-display.js" defer></script>
     <title>Read articles</title>
   </head>
   <body>
@@ -38,9 +38,6 @@
               <li><a href="../pages/write.html">Write</a></li>
               <li><a href="#">Sign In</a></li>
             </ul>
-            <button type="button" class="btn sign-in btn-dark" id="navbar-btn">
-              Get Started
-            </button>
           </div>
         </div>
       </nav>
@@ -48,7 +45,10 @@
     <main>
       <section>
         <div><img src="" alt="" class="article-image" /></div>
-        <article id="article-display"></article>
+        <article>
+          <h3 class="headline"></h3>
+          <div class="text-body"></div>
+        </article>
       </section>
     </main>
   </body>

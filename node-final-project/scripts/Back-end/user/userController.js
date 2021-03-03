@@ -75,4 +75,5 @@ module.exports = {
   login,
   logout,
   getAllUsers,
+  getAllArticles 
 };
