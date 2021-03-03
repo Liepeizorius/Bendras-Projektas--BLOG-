@@ -17,17 +17,6 @@ saveArticle = async (req, res) => {
   res.json(articleSave);
 };
 
-// addArticleImage = async (req, res) => {
-//   let file = req.file;
-//   let article = req.article;
-//   try {
-//     article.articleImageURL = file.path;
-//     await article.save();
-//     res.json(response);
-//     res.json(user);
-//   } catch (e) {}
-// };
-
 module.exports = {
   getAllArticles,
   saveArticle,
