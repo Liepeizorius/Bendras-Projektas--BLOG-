@@ -30,20 +30,20 @@ async function getAllArticles() {
 }
 // Displaying an article
 async function displayAllArticles(articles) {
-  let div = document.querySelector('#article-display');
+  let div = document.querySelector('.article-info');
   let articleItems = '';
   articles.forEach((article) => {
     articleItems += `
-    <div class="article-container container-fluid">
-      <div><img src="http://localhost:1111/${article.articleImageURL}" alt="" class="article-image" /></div>
-      <h3 class="headline">${article.headline}</h3>
-      <div class="text-body">${article.textarea}</div>
-      <div class="wrapper">
-            <div class="btn" onclick="likeFunction()">
-              <div id="btn__element">Like</div>
-              <div id="btn__state">0</div>
+    <div class="entry first-entry">
+            <div class="article-info">
+              <h4 class="username">
+                <span class="topic-title">${article.headline}</span>
+              </h4>
             </div>
-          </div>
+            <div class="article-image">
+              <i class="far fa-bookmark"></i>
+              <img src="http://localhost:1111/${article.articleImageURL}" alt="" class="article-image"/>
+            </div>
     </div>
     `;
   });

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#article-display {
+  max-width: 100%;
+  display: flex;
+}
+
+.article-container {
+  margin: 20px;
+  width: 400px;
+}
+
+.article-container img {
+  width: 350px;
+  height: 250px;
+}
+
+.article-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 1px 2px 9px 2px #333;
+  text-align: center;
+}
+
+.article-container .headline {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.article-container .text-body {
+  font-size: 20px;
+  font-weight: 600;
+}

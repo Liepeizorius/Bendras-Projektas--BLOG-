@@ -1,5 +1,5 @@
-@import "../styles/header.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import '../styles/header.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /* Mobile first */
 
 .main {
@@ -17,7 +17,7 @@
 }
 
 .intro {
-  background-image: url("../images/spaceman.jpg");
+  background-image: url('../images/spaceman.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   max-width: 100%;
@@ -75,12 +75,21 @@ h5 {
   border-bottom: 1px solid var(--text-grey-color);
 }
 /* Bookmarking articles */
+
 .entry {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
+
+.discover {
+  padding: 20px;
+}
+
 .article-info,
-.article-image {
-  width: 50%;
+.article-image img {
+  width: 100%;
   margin: 10px;
 }
 .fa-bookmark {
@@ -243,13 +252,14 @@ h6 {
     text-align: justify;
   }
 
-  .articles-topics {
+  /* .articles-topics {
     display: flex;
-  }
+  } */
   .discover {
     flex-wrap: wrap;
     max-width: 30%;
-    margin: 0 0 0 280px;
+    text-align: center;
+    margin: auto;
   }
   .article-headlines {
     display: flex;
@@ -257,6 +267,11 @@ h6 {
   }
   .user {
     width: 50%;
+  }
+  .article-info,
+  .article-image {
+    width: 70%;
+    margin: 10px;
   }
 }
 
