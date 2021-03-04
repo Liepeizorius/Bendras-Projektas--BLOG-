@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
 // Functions
 async function getAllArticles() {
   try {
-    const response = await fetch(url + "article", {
+    const response = await fetch(url + "scripts/getallarticles", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -21,6 +21,7 @@ async function getAllArticles() {
     });
     if (response.status != 200) throw await response.json();
     let items = await response.json();
+    console.log(items)
     globalArticles = items;
     displayAllArticles(items);
   } catch (e) {
@@ -33,7 +34,7 @@ async function displayAllArticles(articles) {
   let articleItems = "";
   articles.forEach((article) => {
     articleItems += `
-    <div><img src="" alt="" class="article-image" />${article.articleImageURL}</div>
+    <div><img src="http://localhost:1111/${article.articleImageURL}" alt="" class="article-image" /></div>
     <h3 class="headline">${article.headline}</h3>
     <div class="text-body">${article.textarea}</div>
     `;

@@ -42,7 +42,7 @@ document
       let user = await response.json();
       // Sukurti diva straipsnio nuotraukai
       document.getElementById("article-display").src =
-        "http://http://localhost:1111/" + user.articleImageURL;
+        "http://localhost:1111/" + user.articleImageURL;
       window.location.href = "./article-display";
     } catch (e) {
       console.log(e);

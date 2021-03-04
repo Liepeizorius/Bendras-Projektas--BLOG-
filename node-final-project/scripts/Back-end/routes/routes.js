@@ -25,18 +25,18 @@ router.get(
   UserController.logout
 );
 router.get(
-  "/scripts/Back-end/",
+  "/scripts/getallarticles",
   UserMiddleware.authenticate,
   ArticleController.getAllArticles
 );
 router.get(
-  "/scripts/Back-end/",
+  "/scripts/getallusers",
   UserMiddleware.authenticate,
   UserController.getAllUsers
 );
 // Posting a picture
 router.post(
-  "/uploadImage",
+  "/scripts/Back-end/uploadImage",
   upload.single("test"),
   UserMiddleware.authenticate,
   ArticleController.saveArticle
