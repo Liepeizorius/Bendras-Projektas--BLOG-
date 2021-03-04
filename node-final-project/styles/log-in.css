@@ -29,6 +29,11 @@
   border-radius: 10px;
 }
 
+.logItem {
+  display: flex;
+  flex-direction: column;
+}
+
 .heading {
   padding-top: 50px;
 }

@@ -25,7 +25,7 @@ header {
 .container-fluid span a {
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .navbar-brand span a {
@@ -39,7 +39,6 @@ header {
 }
 
 .nav-items {
-  /* margin-top: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -4,24 +4,35 @@
   box-sizing: border-box;
 }
 
-.boxContainer{
+/* NAVBAR */
+
+.container-fluid {
+  display: flex;
+}
+
+.boxContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .formBox {
-    margin-top: 100px;
-    width: 35%;
-    height: 600px;
-    background: gainsboro;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-family: lato, sans-serif;
-    border: solid 1px silver;
-    border-radius: 10px;
+  margin-top: 100px;
+  width: 35%;
+  height: 600px;
+  background: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: lato, sans-serif;
+  border: solid 1px silver;
+  border-radius: 10px;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
 }
 
 .heading {
@@ -29,53 +40,53 @@
 }
 
 .formInputs {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 label {
-    display: block;
-    padding-bottom: 6px;
+  display: block;
+  padding-bottom: 6px;
 }
 
 input {
-    width: 200px;
-    height: 24px;
-    font-size: 18px;
-    box-sizing: border-box;
+  width: 200px;
+  height: 24px;
+  font-size: 18px;
+  box-sizing: border-box;
 }
 
 .password {
-    margin-left: 12px;
+  margin-left: 12px;
 }
 
 .email {
-    padding-top: 12px;
+  padding-top: 12px;
 }
 
 .email input {
-    box-sizing: border-box;
-    width: 100%;
-    height: 24px;
-    font-size: 18px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 24px;
+  font-size: 18px;
 }
 
 .sButton {
-    background: #2dabf9;
-    color: #fff;
-    border: 1px solid #00aca8;
-    border-radius: 5px;
-    transition: all .6s;
-    text-decoration: none;
-    padding: 8px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    width: 100%;
-    font-family: inherit;
-    cursor: pointer;
-    margin-top: 30px;
-}  
+  background: #2dabf9;
+  color: #fff;
+  border: 1px solid #00aca8;
+  border-radius: 5px;
+  transition: all 0.6s;
+  text-decoration: none;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 30px;
+}
 
 .sButton:hover {
   background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
@@ -91,42 +102,36 @@ input {
 }
 
 @media (max-width: 1500px) {
-
   .formBox {
     width: 45%;
-}
-
+  }
 }
 
 @media (max-width: 1080px) {
-
   .formBox {
     width: 75%;
+  }
 }
 
-}
-
-@media (max-width: 550px){
-
-.password {
+@media (max-width: 550px) {
+  .password {
     margin-left: 0px;
-}
-
-
-.form {
-      min-width: 300px;
   }
 
-.formInputs {
-      display: block;
+  .form {
+    min-width: 300px;
   }
 
-input {
-      width: 100%;
+  .formInputs {
+    display: block;
   }
-  
- .boxContainer .formbox .form .formInputs .formItem+.formItem {
-      margin-left: 0;
+
+  input {
+    width: 100%;
+  }
+
+  .boxContainer .formbox .form .formInputs .formItem + .formItem {
+    margin-left: 0;
   }
 
   .formBox {
@@ -140,7 +145,5 @@ input {
     font-family: lato, sans-serif;
     border: solid 1px silver;
     border-radius: 10px;
+  }
 }
-
-}
-
