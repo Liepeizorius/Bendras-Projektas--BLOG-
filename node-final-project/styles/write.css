@@ -382,9 +382,19 @@ h6 {
   .share,
   .build,
   .earn {
+    font-size: 28px;
     padding: 30px;
   }
 
+  .share h2 {
+    font-size: 52px;
+  }
+  .build h2 {
+    font-size: 52px;
+  }
+  .earn h2 {
+    font-size: 52px;
+  }
   .share {
     border-right: 2px solid #fff;
   }
