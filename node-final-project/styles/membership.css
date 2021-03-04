@@ -79,6 +79,19 @@ h2 {
   color: var(--primary-white-color);
   font-weight: 600;
 }
+
+.feedback div {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.feedback-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .why-member h2 {
   color: var(--primary-dark-color);
   font-weight: 600;
@@ -92,16 +105,16 @@ h2 {
 }
 
 .why-member img {
-  width: 40%;
-  justify-content: center;
+  width: 50%;
 }
 .why-member p {
   width: 80%;
-  margin: 10px 40px;
+  margin: 10px 10px;
   font-family: var(--text-font);
   font-size: 25px;
   text-align: right;
 }
+
 .new-directions {
   background-color: #4cc9f0;
   height: 35vh;
@@ -120,10 +133,18 @@ h2 {
   .feedback {
     display: flex;
   }
-  .why-member img,
+
+  .feedback-text {
+    justify-self: end;
+  }
+
+  .why-member img {
+    width: 80%;
+    padding: 30px;
+  }
   .why-member p {
+    font-size: 20px;
     width: 50%;
-    margin: 10px 0 0 40px;
   }
   .new-directions h1 {
     font-size: 60px;
@@ -132,10 +153,15 @@ h2 {
     background-color: #4cc9f0;
     height: 55vh;
   }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Tablet  */
-@media screen and (min-width: 650px) {
+/* @media screen and (min-width: 650px) {
   .navbar {
     display: flex;
     justify-content: center;
@@ -150,16 +176,38 @@ h2 {
     margin: 0 0 0 180px;
     text-align: right;
   }
-}
+} */
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .access img,
   .support img {
     width: 100%;
   }
+
+  .feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .why-member p {
-    width: 50%;
-    margin: 0 0 0 510px;
-    text-align: right;
+    width: 80%;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .why-member img {
+    padding: 30px;
+  }
+
+  .why-member h2 {
+    color: var(--primary-dark-color);
+    font-weight: 600;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .feedback-text {
+    display: flex;
+    flex-direction: column;
   }
 }
